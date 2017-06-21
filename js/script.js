@@ -22,6 +22,15 @@ $("#congrats").show();
 else{
 $("#congrats").hide();
 }
+if (die1 === 1 || (die1 === 6 && previousRoll === 6)) {
+      // switch to other player
+      toggle();
+    } else {
+      // add dice value to round score:
+      roundScore += die1;
+      previousRoll = die1;
+      document.getElementById('current-' + activePlayer).textContent = roundScore;
+    };
 });
 
 //player2 button
@@ -74,8 +83,7 @@ $("#button1").click(function(){
   else{
     $input.unbind("click");
   }
-  return false;
-
+   return false;
 
   });
 
