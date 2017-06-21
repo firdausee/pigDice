@@ -22,6 +22,7 @@ $("#congrats").show();
 else{
 $("#congrats").hide();
 }
+<<<<<<< HEAD
 if (die1 === 1 || (die1 === 6 && previousRoll === 6)) {
       // switch to other player
       toggle();
@@ -31,6 +32,8 @@ if (die1 === 1 || (die1 === 6 && previousRoll === 6)) {
       previousRoll = die1;
       document.getElementById('current-' + activePlayer).textContent = roundScore;
     };
+=======
+>>>>>>> 5b77d6861915342cf1bbef328a77812b68831896
 });
 
 //player2 button
@@ -83,7 +86,12 @@ $("#button1").click(function(){
   else{
     $input.unbind("click");
   }
+<<<<<<< HEAD
    return false;
+=======
+  return false;
+
+>>>>>>> 5b77d6861915342cf1bbef328a77812b68831896
 
   });
 
